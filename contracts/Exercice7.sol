@@ -44,7 +44,7 @@ contract Rectangle is Forme {
         la = _largeur;
     }
 
-    // ✅ Fonction initialiser placée ici, dans Rectangle
+    //  Fonction initialiser placée ici, dans Rectangle
     function initialiser(uint256 _x, uint256 _y, uint256 _longueur, uint256 _largeur) public {
         x = _x;
         y = _y;
