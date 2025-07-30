@@ -1,0 +1,103 @@
+.blockchain-container {
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.status {
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.status.connected {
+  color: #0a0;
+  background-color: #d4edda;
+  border: 1px solid #28a745;
+}
+
+.status.disconnected {
+  color: #a00;
+  background-color: #f8d7da;
+  border: 1px solid #dc3545;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.connect-btn, .refresh-btn {
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: #4caf50;
+  transition: background-color 0.3s ease;
+}
+
+.connect-btn:disabled,
+.refresh-btn:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.connect-btn:not(:disabled):hover,
+.refresh-btn:not(:disabled):hover {
+  background-color: #45a049;
+}
+
+.account-info, .blockchain-info {
+  margin-bottom: 20px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.1);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.label {
+  font-weight: 600;
+  color: #333;
+}
+
+.value {
+  font-family: monospace;
+  color: #555;
+}
+
+.balance {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.error {
+  color: #b00020;
+  background: #fdd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  margin-top: 15px;
+}
